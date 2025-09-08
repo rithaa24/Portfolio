@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackBoxAI - Portfolio | Software Engineer</title>
+    <meta name="description" content="Portfolio of BlackBoxAI, a highly skilled software engineer specializing in full-stack development, AI, and innovative projects.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+        }
+        .hero-bg {
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .card {
+            background: rgba(51, 65, 85, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+        .typewriter {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #3b82f6;
+            animation: typing 4s steps(40) 1s both, blink 1s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #3b82f6; }
+        }
+        .nav-active {
+            border-bottom: 2px solid #3b82f6;
+        }
+        .skill-bar {
+            animation: fill 2s ease-in-out;
+        }
+        @keyframes fill {
+            from { width: 0%; }
+        }
+        #darkModeToggle {
+            transition: transform 0.3s ease;
+        }
+        #darkModeToggle:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-400">Portfolio</h1>
+            <button id="darkModeToggle" class="md:hidden bg-cyan-400 text-slate-900 px-4 py-2 rounded-full hover:bg-cyan-500 transition">Dark/Light</button>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="nav-link hover:text-cyan-400 transition">Home</a></li>
+                <li><a href="#about" class="nav-link hover:text-cyan-400 transition">About</a></li>
+                <li><a href="#skills" class="nav-link hover:text-cyan-400 transition">Skills</a></li>
+                <li><a href="#projects" class="nav-link hover:text-cyan-400 transition">Projects</a></li>
+                <li><a href="#contact" class="nav-link hover:text-cyan-400 transition">Contact</a></li>
+            </ul>
+            <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+        </nav>
+        <div id="mobileMenu" class="md:hidden hidden bg-slate-900/95 px-6 py-4">
+            <ul class="space-y-4">
+                <li><a href="#home" class="block hover:text-cyan-400 transition">Home</a></li>
+                <li><a href="#about" class="block hover:text-cyan-400 transition">About</a></li>
+                <li><a href="#skills" class="block hover:text-cyan-400 transition">Skills</a></li>
+                <li><a href="#projects" class="block hover:text-cyan-400 transition">Projects</a></li>
+                <li><a href="#contact" class="block hover:text-cyan-400 transition">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center hero-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <img src="C:\Users\shari\Desktop\My projects\Portfolio\Images\Haritha.S.jpg" alt="Profile of Haritha.S" class="w-40 h-40 mx-auto mb-8 rounded-full border-4 border-cyan-400 shadow-lg" />
+            <h2 class="text-5xl md:text-6xl font-bold mb-4">Transforming complex data into actionable insights with AI and problem-solving skills</h2>
+            <p class="text-xl md:text-2xl mb-6 typewriter">Hi, I'm Haritha, a versatile software engineer crafting innovative solutions across multiple domains.</p>
+            <a href="#projects" class="bg-cyan-400 text-slate-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-cyan-500 transition shadow-lg">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <img src="C:\Users\shari\Desktop\My projects\Portfolio\Images\Haritha1.jpg" alt="Haritha1" class="rounded-lg shadow-2xl" />
+                <div>
+                    <p class="text-lg mb-6">AI and Data Science undergraduate with a CGPA of 8.08 (graduating 2026), experienced across ML, data engineering, and cloud deployment; I am a candidate who combining academic rigor with real‑world impact through internships and production‑grade projects. </p>
+                    <p class="text-lg mb-6">internships include MNRE (solar energy optimization with neural networks), Data Pattern (ETL and pipelines), and Zoho (sentence transformers for semantic tasks). Proficient in Python, SQL, TensorFlow, Scikit‑Learn, OpenCV, Pandas, Power BI, and AWS; certified via NPTEL and Google Data Analytics.</p>
+                    <a href="C:\Users\shari\Desktop\My projects\Portfolio\Files\Haritha resume ATS.pdf (3).pdf" download="Haritha resume ATS.pdf (3).pdf">
+                    <button id="downloadCV" class="bg-cyan-400 text-slate-900 px-6 py-3 rounded-lg hover:bg-cyan-500 transition">Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">My Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-cyan-300">Frontend Development</h3>
+                    <div class="skill-bar bg-slate-700 h-4 rounded-full mb-2">
+                        <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-4 rounded-full" style="width: 95%;"></div>
+                    </div>
+                    <p>React, Vue.js, Angular, Tailwind CSS, Svelte - Crafting responsive, user-centric interfaces.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-cyan-300">Backend Engineering</h3>
+                    <div class="skill-bar bg-slate-700 h-4 rounded-full mb-2">
+                        <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-4 rounded-full" style="width: 90%;"></div>
+                    </div>
+                    <p>Node.js, Python (Django/Flask), Go, PostgreSQL, MongoDB - Building robust server-side architectures.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-cyan-300">AI & Data Science</h3>
+                    <div class="skill-bar bg-slate-700 h-4 rounded-full mb-2">
+                        <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-4 rounded-full" style="width: 88%;"></div>
+                    </div>
+                    <p>TensorFlow, PyTorch, Scikit-learn, Natural Language Processing - Implementing intelligent systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/502ff2e9-063c-4c9b-8fb2-7eaa2e9ea1df.png" alt="Detailed mockup of a sleek e-commerce website displaying product listings with a cart icon, user login interface, and secure payment integration, featuring a clean design with shopping bags, credit card visuals, and a 'Buy Now' button, set against a professional online store backdrop with digital product images and delivery icons" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <h3 class="text-xl font-semibold mb-2 text-cyan-300">E-Commerce Platform</h3>
+                    <p class="mb-4">A full-stack online store with real-time inventory, payment processing, and admin dashboard. Built with MERN stack.</p>
+                    <a href="#" class="text-cyan-400 hover:underline">View Project</a>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d06ace81-2c8c-46f5-8faf-da5e1d58387f.png" alt="Screenshot of a mobile app interface for task management showing a todo list with checkboxes, calendar integration, notification alerts, and productivity statistics graphs, designed with a minimalist color scheme, progress bars, and user-friendly icons for completing tasks efficiently" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <h3 class="text-xl font-semibold mb-2 text-cyan-300">Task Manager App</h3>
+                    <p class="mb-4">Cross-platform productivity tool with AI-powered task prioritization and team collaboration features.</p>
+                    <a href="#" class="text-cyan-400 hover:underline">View Project</a>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e4f85d92-c4dc-471f-8461-dc04deb147ea.png" alt="Visualization of a machine learning model interface depicting data flows, neural network diagrams, prediction outputs, and analytical charts, with interactive sliders for adjusting parameters, set in a high-tech dashboard environment with glowing AI circuits and futuristic data visualization elements" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                    <h3 class="text-xl font-semibold mb-2 text-cyan-300">AI-Powered Analytics</h3>
+                    <p class="mb-4">Predictive analytics platform using advanced ML techniques for business intelligence and decision-making.</p>
+                    <a href="#" class="text-cyan-400 hover:underline">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Achievements</h2>
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">50+</div>
+                    <p>Projects Completed</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">10+</div>
+                    <p>Years Experience</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">1M+</div>
+                    <p>Lines of Code</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">5-star</div>
+                    <p>Client Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Get In Touch</h2>
+            <form id="contactForm" class="max-w-lg mx-auto bg-slate-800 p-8 rounded-lg card">
+                <div class="mb-6">
+                    <label for="name" class="block mb-2 text-sm font-semibold">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 text-white">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 text-sm font-semibold">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 text-white">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block mb-2 text-sm font-semibold">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 text-white"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-cyan-400 text-slate-900 py-3 rounded-lg hover:bg-cyan-500 transition font-semibold">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2024 BlackBoxAI. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-cyan-400 hover:text-cyan-500 mx-4">GitHub</a>
+                <a href="#" class="text-cyan-400 hover:text-cyan-500 mx-4">LinkedIn</a>
+                <a href="#" class="text-cyan-400 hover:text-cyan-500 mx-4">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation and Scrolling
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('nav-active'));
+                link.classList.add('nav-active');
+            });
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('menuBtn').addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+
+        // Dark Mode Toggle (Simple theme switcher)
+        document.getElementById('darkModeToggle').addEventListener('click', () => {
+            document.body.classList.toggle('bg-white');
+            document.body.classList.toggle('text-slate-900');
+            document.body.classList.toggle('bg-slate-900');
+            document.body.classList.toggle('text-slate-200'); // Note: Simplified, may not cover all elements
+        });
+
+        // Contact Form Handling
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            e.target.reset();
+        });
+
+        // Parallax Effect for Hero
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('#home');
+            const offset = window.pageYOffset;
+            hero.style.backgroundPositionY = offset * 0.5 + 'px';
+        });
+
+        // Skill Bars Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.dataset.width;
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.skill-bar div').forEach(bar => {
+            observer.observe(bar);
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
