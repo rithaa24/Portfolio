@@ -3,65 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlackBoxAI - Portfolio | Software Engineer</title>
+    <title>Haritha - Portfolio | ML Engineer</title>
     <meta name="description" content="Portfolio of BlackBoxAI, a highly skilled software engineer specializing in full-stack development, AI, and innovative projects.">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #e2e8f0;
-        }
-        .hero-bg {
-            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .card {
-            background: rgba(51, 65, 85, 0.5);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(148, 163, 184, 0.1);
-            transition: all 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
-        }
-        .typewriter {
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid #3b82f6;
-            animation: typing 4s steps(40) 1s both, blink 1s step-end infinite;
-        }
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-        @keyframes blink {
-            from, to { border-color: transparent; }
-            50% { border-color: #3b82f6; }
-        }
-        .nav-active {
-            border-bottom: 2px solid #3b82f6;
-        }
-        .skill-bar {
-            animation: fill 2s ease-in-out;
-        }
-        @keyframes fill {
-            from { width: 0%; }
-        }
-        #darkModeToggle {
-            transition: transform 0.3s ease;
-        }
-        #darkModeToggle:hover {
-            transform: scale(1.1);
-        }
-    </style>
 </head>
 <body class="antialiased">
     <!-- Header -->
@@ -252,59 +197,6 @@ Structures and Algorithms (DSA), Software Development Life Cycle (SDLC), Natural
         </div>
     </footer>
 
-    <script>
-        // Navigation and Scrolling
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const target = document.querySelector(link.getAttribute('href'));
-                target.scrollIntoView({ behavior: 'smooth' });
-                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('nav-active'));
-                link.classList.add('nav-active');
-            });
-        });
-
-        // Mobile Menu Toggle
-        document.getElementById('menuBtn').addEventListener('click', () => {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        });
-
-        // Dark Mode Toggle (Simple theme switcher)
-        document.getElementById('darkModeToggle').addEventListener('click', () => {
-            document.body.classList.toggle('bg-white');
-            document.body.classList.toggle('text-slate-900');
-            document.body.classList.toggle('bg-slate-900');
-            document.body.classList.toggle('text-slate-200'); // Note: Simplified, may not cover all elements
-        });
-
-        // Contact Form Handling
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            e.target.reset();
-        });
-
-        // Parallax Effect for Hero
-        window.addEventListener('scroll', () => {
-            const hero = document.querySelector('#home');
-            const offset = window.pageYOffset;
-            hero.style.backgroundPositionY = offset * 0.5 + 'px';
-        });
-
-        // Skill Bars Animation on Scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.width = entry.target.dataset.width;
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.skill-bar div').forEach(bar => {
-            observer.observe(bar);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-</content>
-</create_file>
