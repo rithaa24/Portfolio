@@ -9,7 +9,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="antialiased">
-    <!-- Header -->
     <header class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-cyan-400">Portfolio</h1>
@@ -17,6 +16,7 @@
             <ul class="hidden md:flex space-x-8">
                 <li><a href="#home" class="nav-link hover:text-cyan-400 transition">Home</a></li>
                 <li><a href="#about" class="nav-link hover:text-cyan-400 transition">About</a></li>
+                <li><a href="#experience" class="nav-link hover:text-cyan-400 transition">Experience</a></li>
                 <li><a href="#skills" class="nav-link hover:text-cyan-400 transition">Skills</a></li>
                 <li><a href="#projects" class="nav-link hover:text-cyan-400 transition">Projects</a></li>
                 <li><a href="#contact" class="nav-link hover:text-cyan-400 transition">Contact</a></li>
@@ -27,6 +27,7 @@
             <ul class="space-y-4">
                 <li><a href="#home" class="block hover:text-cyan-400 transition">Home</a></li>
                 <li><a href="#about" class="block hover:text-cyan-400 transition">About</a></li>
+                <li><a href="#experience" class="block hover:text-cyan-400 transition">Experience</a></li>
                 <li><a href="#skills" class="block hover:text-cyan-400 transition">Skills</a></li>
                 <li><a href="#projects" class="block hover:text-cyan-400 transition">Projects</a></li>
                 <li><a href="#contact" class="block hover:text-cyan-400 transition">Contact</a></li>
@@ -34,7 +35,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-center hero-bg text-white">
         <div class="container mx-auto px-6 text-center">
             <img src="Images\Haritha.S.jpg" alt="Profile of Haritha.S" class="w-40 h-40 mx-auto mb-8 rounded-full border-4 border-cyan-400 shadow-lg" />
@@ -44,7 +44,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-20 bg-slate-900">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">About Me</h2>
@@ -61,8 +60,51 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-slate-800">
+    <section id="experience" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Work Experience</h2>
+            <div class="space-y-12">
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-2xl font-semibold text-cyan-300">Zoho Corporation</h3>
+                        <span class="text-lg text-slate-400 mt-2 md:mt-0">Augest 2025 - Present</span>
+                    </div>
+                    <p class="text-lg font-medium mb-2">Machine Learning Intern</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300">
+                        <li>Developed a Sentence Transformer for semantic search and retrieval systems to reduce reliance on keyword-based methods.</li>
+                        <li>Built an advanced Question Answering (QA) system for code snippets and product documentation.</li>
+                        <li>Automated text summarization tasks and enhanced NLP capabilities.</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-2xl font-semibold text-cyan-300">Data Patterns India Pvt Ltd</h3>
+                        <span class="text-lg text-slate-400 mt-2 md:mt-0">September 2024 - February 2025</span>
+                    </div>
+                    <p class="text-lg font-medium mb-2">Data Analyst Intern</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300">
+                        <li>Engineered and optimized data pipelines for efficient ETL (Extract, Transform, Load) processes.</li>
+                        <li>Developed a data visualization dashboard using Power BI and Power Query to provide key business insights.</li>
+                        <li>Authored a comprehensive report detailing project outcomes, methodology, and future recommendations.</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-lg shadow-lg">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-2xl font-semibold text-cyan-300">Ministry of New and Renewable Energy (MNRE)</h3>
+                        <span class="text-lg text-slate-400 mt-2 md:mt-0">March 2025 - May 2025</span>
+                    </div>
+                    <p class="text-lg font-medium mb-2">Machine Learning Intern</p>
+                    <ul class="list-disc list-inside space-y-2 text-slate-300">
+                        <li>Designed and implemented a predictive optimization system using neural networks for solar energy.</li>
+                        <li>Integrated sensor data with weather forecasts to predict optimal energy generation.</li>
+                        <li>Built a dashboard to visualize solar farm efficiency and energy yield.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills" class="py-20 bg-slate-900">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">My Expertise</h2>
             <div class="grid md:grid-cols-3 gap-8">
@@ -93,7 +135,6 @@ Structures and Algorithms (DSA), Software Development Life Cycle (SDLC), Natural
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Featured Projects</h2>
@@ -116,7 +157,7 @@ Structures and Algorithms (DSA), Software Development Life Cycle (SDLC), Natural
                     <p class="mb-4">Built a deep learning CV model to translate facial expressions into abstract cognitive-inspired art.</p>
                     <a href="https://github.com/rithaa24/Face-cognitive-painting-cv.git" class="text-cyan-400 hover:underline">View Project</a>
                 </div>
-                    <div class="card p-6 rounded-lg">
+                <div class="card p-6 rounded-lg">
                     <img src="Images\image4.jpg" alt="Detailed mockup of a sleek e-commerce website displaying product listings with a cart icon, user login interface, and secure payment integration, featuring a clean design with shopping bags, credit card visuals, and a 'Buy Now' button, set against a professional online store backdrop with digital product images and delivery icons" class="w-full h-48 object-cover rounded-t-lg mb-4" />
                     <h3 class="text-xl font-semibold mb-2 text-cyan-300">Covid detection model</h3>
                     <p class="mb-4">Developed a deep learning model for automated COVID-19 detection from chest X-ray images</p>
@@ -138,8 +179,7 @@ Structures and Algorithms (DSA), Software Development Life Cycle (SDLC), Natural
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section class="py-20 bg-slate-900">
+    <section class="py-20 bg-slate-800">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Achievements</h2>
             <div class="grid md:grid-cols-4 gap-6 text-center">
@@ -148,22 +188,21 @@ Structures and Algorithms (DSA), Software Development Life Cycle (SDLC), Natural
                     <p>Projects Completed</p>
                 </div>
                 <div>
-                    <div class="text-4xl font-bold text-cyan-400 mb-2">2+</div>
-                    <p>Years Experience</p>
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">1</div>
+                    <p>Year Experience</p>
                 </div>
                 <div>
                     <div class="text-4xl font-bold text-cyan-400 mb-2">1M+</div>
                     <p>Lines of Code</p>
                 </div>
                 <div>
-                    <div class="text-4xl font-bold text-cyan-400 mb-2">4.3-star</div>
-                    <p>Client Reviews</p>
+                    <div class="text-4xl font-bold text-cyan-400 mb-2">4</div>
+                    <p>Participated in Hackathons</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-20">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12">Get In Touch</h2>
@@ -185,7 +224,6 @@ Structures and Algorithms (DSA), Software Development Life Cycle (SDLC), Natural
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 py-8">
         <div class="container mx-auto px-6 text-center">
             <p>© 2025 Haritha. All rights reserved.</p>
